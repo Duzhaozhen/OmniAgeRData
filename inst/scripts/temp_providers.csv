@@ -1,0 +1,80 @@
+Pattern,DataProvider,SourceVersion,Species,SourceUrl,SourceType,Tag
+garagnani,"Garagnani, P et al.",2012,Homo sapiens,https://doi.org/10.1111/acel.12005,TXT,OmniAgeR:Methylation:AgingClock:Biomarker
+weidner,Weidner et al,2014,Homo sapiens,https://doi.org/10.1186/gb-2014-15-2-r24,TXT,OmniAgeR:Methylation:AgingClock:Biomarker
+horvath2013,Horvath S.,2013,Homo sapiens,https://doi.org/10.1186/gb-2013-14-10-r115,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+hannum,Hannum G et al.,2013,Homo sapiens,https://doi.org/10.1016/j.molcel.2012.10.016,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+lin,Lin Q et al.,2016,Homo sapiens,https://doi.org/10.18632/aging.100908,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+vidalbralo,Vidal-Bralo L et al.,2016,Homo sapiens,https://doi.org/10.3389/fgene.2016.00126,TXT,OmniAgeR:Methylation:AgingClock:Biomarker
+zhang_clock,Zhang Q et al.,2019,Homo sapiens,https://github.com/qzhang314/DNAm-based-age-predictor),TXT,OmniAgeR:Methylation:AgingClock:Biomarker
+horvath2018,Horvath S et al.,2018,Homo sapiens,https://doi.org/10.18632/aging.101508,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+bernabeu_cage,Bernabeu E et al.,2023,Homo sapiens,https://github.com/elenabernabeu/cage_bage/tree/main/cage_predictor),CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+cortical_clock,Shireby GL et al.,2020,Homo sapiens,https://github.com/gemmashireby/CorticalClock/tree/master/PredCorticalAge,TXT,OmniAgeR:Methylation:AgingClock:Biomarker
+pedbe,McEwen LM et al.,2019,Homo sapiens,https://doi.org/10.1073/pnas.1820843116,TXT,OmniAgeR:Methylation:AgingClock:Biomarker
+abec,Lee Y et al.,2020,Homo sapiens,https://doi.org/10.1186/s12864-020-07168-8,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+eabec,Lee Y et al.,2020,Homo sapiens,https://doi.org/10.1186/s12864-020-07168-8,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+cabec,Lee Y et al.,2020,Homo sapiens,https://doi.org/10.1186/s12864-020-07168-8,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+pipek_elasticnet,Pipek et al.,2022,Homo sapiens,https://doi.org/10.1007/s10910-022-01381-4,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+pipek_filteredh,Pipek et al.,2022,Homo sapiens,https://doi.org/10.1007/s10910-022-01381-4,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+pipek_retrainedh,Pipek et al.,2022,Homo sapiens,https://doi.org/10.1007/s10910-022-01381-4,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+intrin_clock,Tomusiak A et al.,2024,Homo sapiens,https://doi.org/10.5281/zenodo.10426597,RData,OmniAgeR:Methylation:AgingClock:Biomarker
+centenarian,Dec E et al.,2023,Homo sapiens,https://doi.org/10.1007/s11357-023-00731-7,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+retroage,Ndhlovu LC et al.,2024,Homo sapiens,https://doi.org/10.1111/acel.14288,XLS/XLSX,OmniAgeR:Methylation:AgingClock:Biomarker
+zhang10,Zhang Y et al.,2017,Homo sapiens,https://github.com/bio-learn/biolearn/tree/master/biolearn/data,RDA,OmniAgeR:Methylation:AgingClock:Biomarker
+phenoage,Levine ME et al.,2018,Homo sapiens,https://doi.org/10.18632/aging.101414,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+dunedinpace,Belsky DW et al.,2022,Homo sapiens,https://github.com/danbelsky/DunedinPACE,RDA,OmniAgeR:Methylation:AgingClock:Biomarker
+grimage1,Lu AT et al.,2019,Homo sapiens,https://github.com/bio-learn/biolearn/tree/master/biolearn/data,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+grimage2,Lu AT et al.,2022,Homo sapiens,https://github.com/bio-learn/biolearn/tree/master/biolearn/data,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+pcclocks,Higgins-Chen AT et al.,2022,Homo sapiens,https://zenodo.org/records/17162604,BLOB,OmniAgeR:Methylation:AgingClock:Biomarker
+dnamfitage,McGreevy KM et al.,2023,Homo sapiens,https://github.com/kristenmcgreevy/DNAmFitAge,RDA,OmniAgeR:Methylation:AgingClock:Biomarker
+ic_clock,Fuentealba M et al.,2025,Homo sapiens,https://doi.org/10.1038/s43587-025-00883-5,XLS/XLSX,OmniAgeR:Methylation:AgingClock:Biomarker
+systemsage,Sehgal R et al.,2024,Homo sapiens,https://zenodo.org/records/17162604,BLOB,OmniAgeR:Methylation:AgingClock:Biomarker
+wu_clock,Wu et al.,2019,Homo sapiens,https://doi.org/10.18632/aging.102399,XLS/XLSX,OmniAgeR:Methylation:AgingClock:Biomarker
+bohlin_ga,Bohlin J et al.,2016,Homo sapiens,https://zenodo.org/badge/latestdoi/23951/JonBohlin/predictGA,RDA,OmniAgeR:Methylation:GestationalAge:Biomarker
+epic_ga,Haftorn KL et al.,2021,Homo sapiens,https://doi.org/10.1186/s13148-021-01055-z,XLS/XLSX,OmniAgeR:Methylation:GestationalAge:Biomarker
+lee_ga,Lee Y et al.,2019,Homo sapiens,https://doi.org/10.18632/aging.102049,CSV,OmniAgeR:Methylation:GestationalAge:Biomarker
+knight_ga,Knight AK et al.,2016,Homo sapiens,https://github.com/akknight/PredictGestationalAge,CSV,OmniAgeR:Methylation:GestationalAge:Biomarker
+mayne_ga,Mayne BT et al.,2017,Homo sapiens,https://doi.org/10.2217/epi-2016-0103,XLS/XLSX,OmniAgeR:Methylation:GestationalAge:Biomarker
+epitoc1,Yang Z et al.,2016,Homo sapiens,https://github.com/aet21/EpiMitClocks,RData,OmniAgeR:Methylation:AgingClock:Biomarker
+epitoc2,Teschendorff AE.,2020,Homo sapiens,https://github.com/aet21/EpiMitClocks,RData,OmniAgeR:Methylation:AgingClock:Biomarker
+epitoc3,Teschendorff AE.,2023,Homo sapiens,https://github.com/aet21/EpiMitClocks,RData,OmniAgeR:Methylation:AgingClock:Biomarker
+stemtocvitro,Zhu T et al.,2024,Homo sapiens,https://github.com/aet21/EpiMitClocks,RData,OmniAgeR:Methylation:AgingClock:Biomarker
+stemtoc,Zhu T et al.,2024,Homo sapiens,https://github.com/aet21/EpiMitClocks,RData,OmniAgeR:Methylation:AgingClock:Biomarker
+replitali,Endicott JL et al.,2022,Homo sapiens,https://github.com/aet21/EpiMitClocks,RData,OmniAgeR:Methylation:AgingClock:Biomarker
+hypoclock,Teschendorff AE.,2020,Homo sapiens,https://github.com/aet21/EpiMitClocks,RData,OmniAgeR:Methylation:AgingClock:Biomarker
+epicmit,Duran-Ferrer M et al.,2020,Homo sapiens,https://github.com/aet21/EpiMitClocks,RData,OmniAgeR:Methylation:AgingClock:Biomarker
+dnamtl,Lu AT et al.,2019,Homo sapiens,https://doi.org/10.18632/aging.102173,XLS/XLSX,OmniAgeR:Methylation:AgingClock:Biomarker
+causal_clocks,Ying K et al.,2024,Homo sapiens,https://doi.org/10.1038/s43587-023-00557-0,CSV,OmniAgeR:Methylation:AgingClock:Biomarker
+stoch_clocks,Tong H et al.,2024,Homo sapiens,https://doi.org/10.1038/s43587-024-00600-8,RData,OmniAgeR:Methylation:AgingClock:Biomarker
+cts_clocks,Tong H et al.,2024,Homo sapiens,https://github.com/HGT-UwU/CTSclocks,RData,OmniAgeR:Methylation:AgingClock:Biomarker
+scimmuaging,Li W et al.,2025,Homo sapiens,https://github.com/CiiM-Bioinformatics-group/scImmuAging,RDS,OmniAgeR:Transcriptomics:AgingClock:Biomarker
+brain_celltype_specific_clocks,Muralidharan C et al.,2025,Homo sapiens,https://doi.org/10.1002/advs.202506109,CSV,OmniAgeR:Transcriptomics:AgingClock:Biomarker
+cvfit_c46,Salignon J et al.,2025,Homo sapiens,https://github.com/jsalignon/pasta,RData,OmniAgeR:Transcriptomics:AgingClock:Biomarker
+cvfit_pasta,Salignon J et al.,2025,Homo sapiens,https://github.com/jsalignon/pasta,RData,OmniAgeR:Transcriptomics:AgingClock:Biomarker
+cvfit_reg,Salignon J et al.,2025,Homo sapiens,https://github.com/jsalignon/pasta,RData,OmniAgeR:Transcriptomics:AgingClock:Biomarker
+beta_c46,Salignon J et al.,2025,Homo sapiens,https://github.com/jsalignon/pasta,RData,OmniAgeR:Transcriptomics:AgingClock:Biomarker
+beta_pasta,Salignon J et al.,2025,Homo sapiens,https://github.com/jsalignon/pasta,RData,OmniAgeR:Transcriptomics:AgingClock:Biomarker
+pasta_gene,Salignon J et al.,2025,Homo sapiens,https://github.com/jsalignon/pasta,RData,OmniAgeR:Transcriptomics:AgingClock:Biomarker
+crp,Wielscher M et al.,2022,Homo sapiens,https://doi.org/10.6084/m9.figshare.19188674.v1,CSV,OmniAgeR:Methylation:SurrogateBiomarker
+il6,Stevenson AJ et al.,2021,Homo sapiens,https://doi.org/10.1093/gerona/glab046,TXT,OmniAgeR:Methylation:SurrogateBiomarker
+chip,Kirmani S et al.,2025,Homo sapiens,https://doi.org/10.1038/s41467-025-59333-w,XLS/XLSX,OmniAgeR:Methylation:SurrogateBiomarker
+episcores,Gadd DA et al.,2022,Homo sapiens,https://zenodo.org/records/7154750,CSV,OmniAgeR:Methylation:SurrogateBiomarker
+mccartney,McCartney DL et al.,2018,Homo sapiens,https://doi.org/10.1186/s13059-018-1514-1,XLS/XLSX,OmniAgeR:Methylation:PhenotypePrediction:Biomarker
+smk_idx,Teschendorff AE et al.,2015,Homo sapiens,https://doi.org/10.1001/jamaoncol.2015.1053,TXT,OmniAgeR:Methylation:RiskModel:Biomarker
+hepato_xu,Xu Rh et al.,2017,Homo sapiens,https://doi.org/10.1038/nmat4997,TXT,OmniAgeR:Methylation:RiskModel:Biomarker
+ensembleage,Haghani A. et al.,2025,Mammalia,https://doi.org/10.1007/s11357-025-01808-1,XLS/XLSX,OmniAgeR:Methylation:AgingClock:CrossSpecies:Biomarker
+pan_mammalian_clock,Lu AT et al.,2023,Mammalia,https://github.com/shorvath/MammalianMethylationConsortium/tree/v4.0.0,CSV,OmniAgeR:Methylation:AgingClock:CrossSpecies:Biomarker
+pan_mammalian_blood,Lu AT et al.,2023,Mammalia,https://github.com/shorvath/MammalianMethylationConsortium/tree/v4.0.0,CSV,OmniAgeR:Methylation:AgingClock:CrossSpecies:Biomarker
+pan_mammalian_skin,Lu AT et al.,2023,Mammalia,https://github.com/shorvath/MammalianMethylationConsortium/tree/v4.0.0,CSV,OmniAgeR:Methylation:AgingClock:CrossSpecies:Biomarker
+brain_frohlich_control_example_15donors,NCBI GEO,2024,Homo sapiens,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254569,HDF5,OmniAgeR:Transcriptomics:SingleCell:ExampleData
+cts_example_data_liver,Tong H et al.,2024,Homo sapiens,https://github.com/HGT-UwU/CTSclocks/tree/main,RData,OmniAgeR:Epigenetics:ExampleData
+cts_murphy_gse88890,Tong H et al.,2024,Homo sapiens,https://github.com/HGT-UwU/CTSclocks/tree/main,RData,OmniAgeR:Epigenetics:ExampleData
+cts_pai_gse112179,Tong H et al.,2024,Homo sapiens,https://github.com/HGT-UwU/CTSclocks/tree/main,RData,OmniAgeR:Epigenetics:ExampleData
+ga_example,Knight AK et al.,2016,Homo sapiens,https://github.com/akknight/PredictGestationalAge,CSV,OmniAgeR:Epigenetics:ExampleData
+hannum_example,NCBI GEO,2012,Homo sapiens,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE40279,IDAT,OmniAgeR:Epigenetics:ExampleData
+lung_inv,Teschendorff AE.,2023,Homo sapiens,https://github.com/aet21/EpiMitClocks,RData,OmniAgeR:Epigenetics:ExampleData
+seu_gabitto_2024_filtered,CELLxGENE,2024,Homo sapiens,https://datasets.cellxgene.cziscience.com/9d53f7bb-dc23-4c05-b2a6-4afa9a6e3be0.rds,RDS,OmniAgeR:Transcriptomics:SingleCell:ExampleData
+tursiops_example,Lu AT et al.,2023,Tursiops truncatus,https://zenodo.org/records/7574747,RDS,OmniAgeR:CrossSpecies:AnimalModels:ExampleData
+anage_data,Lu AT et al.,2023,Mammalia,https://zenodo.org/records/7574747,RDS,OmniAgeR:CrossSpecies:AnimalModels
+tzh_example_ctf,National Omics Data Encyclopedia,2020,Homo sapiens,https://www.biosino.org/node/project/detail/OEP000260,IDAT,OmniAgeR:Methylation:AgingClock:Biomarker
+yazar_cd4t_cd8t_example,CELLxGENE,2022,Homo sapiens,https://cellxgene.cziscience.com/collections/dde06e0f-ab3b-46be-96a2-a8082383c4a1,RDS,OmniAgeR:Transcriptomics:SingleCell:ExampleData
+dnam_ctf,Du Zhaozhen,2025,Homo sapiens,https://github.com/Duzhaozhen/OmniAge,RDS,OmniAgeR:Epigenetics:ExampleData

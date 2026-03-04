@@ -1,0 +1,7 @@
+local_test_data/
+*.Rproj
+.Rhistory
+.RData
+.DS_Store
+doc/
+Meta/

@@ -1,0 +1,38 @@
+Package: OmniAgeRData
+Type: Package
+Title: Supporting Data for the OmniAgeR Package
+Version: 0.99.0
+Encoding: UTF-8
+Authors@R: 
+    c(person(given = "Zhaozhen",
+             family = "Du",
+             role = c("aut", "cre"),
+             email = "duzhaozhen2022@sinh.ac.cn"),
+      person(given = "Andrew E.",
+             family = "Teschendorff",
+             role = "aut",
+             email = "andrew@sinh.ac.cn"),
+      person("National Science Foundation of China", 
+             role = "fnd", 
+             comment = c(NSFC = "W2431024, 32370699, 32570775")))
+Description: This package provides aging omic biomarker model parameters and 
+    example data for the OmniAgeR package. It includes coefficients for 
+    various aging clocks and processed validation datasets. Data is 
+    hosted via ExperimentHub.
+URL: https://github.com/Duzhaozhen/OmniAge/tree/main/OmniAgeR
+BugReports: https://github.com/Duzhaozhen/OmniAge/issues
+License: CC BY 4.0
+Depends: R (>= 4.5.0)
+Imports: 
+    AnnotationHub,
+    ExperimentHub,
+    qs2
+Suggests: 
+    knitr,
+    rmarkdown,
+    BiocStyle,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+biocViews: ExperimentHub, ExperimentData, SpecimenSource, Tissue
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3

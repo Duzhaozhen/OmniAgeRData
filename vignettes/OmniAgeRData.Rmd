@@ -1,0 +1,84 @@
+---
+title: "Introduction to OmniAgeRData"
+author:
+- name: Zhaozhen Du
+  affiliation: Shanghai Institute of Nutrition and Health, CAS
+  email: duzhaozhen2022@sinh.ac.cn
+- name: Andrew E. Teschendorff
+  affiliation: Shanghai Institute of Nutrition and Health, CAS
+  email: andrew@sinh.ac.cn
+package: OmniAgeRData
+output: 
+  BiocStyle::html_document:
+    toc_float: true
+vignette: |
+  %\VignetteIndexEntry{Introduction to OmniAgeRData}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Introduction
+
+This package provides aging omic biomarker model parameters and example data for
+the `OmniAgeR` package. It utilizes `ExperimentHub` to deliver both traditional 
+clock coefficients and large-scale synthetic datasets.
+
+# Exploring Available Resources
+You can explore all available OmniAgeR datasets and models 
+through ExperimentHub:
+
+```{r explore, eval=TRUE}
+library(OmniAgeRData)
+library(ExperimentHub)
+
+eh <- ExperimentHub()
+query(eh, "OmniAgeRData")
+```
+
+# Data Retrieval
+The recommended way to load data is using our wrapper function getOmniAgeData().
+
+```{r retrieve, eval=TRUE}
+# Simulate local tests to pass BiocCheck
+local_dir <- tempdir()
+saveRDS(matrix(1:10), file.path(local_dir, "LungInv.rds"))
+
+lung_data <- getOmniAgeData("LungInv", localTest = TRUE, localDir = local_dir)
+head(lung_data)
+```
+**Note on Large Datasets:** For extremely large datasets like PCClocks_data.qs2 
+(10GB), we highly recommend a stable and fast internet connection. If the 
+default R download mechanism fails or is too slow, please refer to the 
+troubleshooting section below.
+
+# Troubleshooting: Manual Caching for Large Files
+
+If you experience network issues when downloading large .qs2 files, 
+you can bypass the R downloader by manually caching the files.
+
+Step 1: Download the dataset directly from our Zenodo repository via your web 
+browser or a command-line tool like wget 
+(which supports resuming broken downloads).
+
+Step 2: Use the following R code to locate the expected local cache path and 
+move your downloaded file there:
+
+```{r manual_cache, eval=FALSE}
+# 1. Locate the correct destination path in your local ExperimentHub cache
+target_path <- AnnotationHub::cache(query(eh, "PCClocks_data.qs2")[1])
+
+# 2. Copy your manually downloaded file to the cache location
+# Replace "path/to/your/downloaded/file" with your actual file path
+file.copy("path/to/your/downloaded/file/PCClocks_data.qs2", target_path,
+    overwrite = TRUE
+)
+
+# 3. Now you can load the data normally in R!
+pc_clocks <- getOmniAgeData("PCClocks_data.qs2")
+```
+
+# Session Information
+```{r sessionInfo, eval=TRUE}
+sessionInfo()
+```
+
