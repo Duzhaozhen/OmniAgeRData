@@ -47,7 +47,7 @@ lung_data <- getOmniAgeData("LungInv", localTest = TRUE, localDir = local_dir)
 head(lung_data)
 ```
 **Note on Large Datasets:** For extremely large datasets like PCClocks_data.qs2 
-(10GB), we highly recommend a stable and fast internet connection. If the 
+(2GB), we highly recommend a stable and fast internet connection. If the 
 default R download mechanism fails or is too slow, please refer to the 
 troubleshooting section below.
 

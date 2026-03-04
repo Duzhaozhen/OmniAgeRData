@@ -19,8 +19,8 @@ Description: This package provides aging omic biomarker model parameters and
     example data for the OmniAgeR package. It includes coefficients for 
     various aging clocks and processed validation datasets. Data is 
     hosted via ExperimentHub.
-URL: https://github.com/Duzhaozhen/OmniAge/tree/main/OmniAgeR
-BugReports: https://github.com/Duzhaozhen/OmniAge/issues
+URL: https://github.com/Duzhaozhen/OmniAgeRData
+BugReports: https://github.com/Duzhaozhen/OmniAgeRData/issues
 License: CC BY 4.0
 Depends: R (>= 4.5.0)
 Imports: 

@@ -39,7 +39,7 @@ metadata <- data.frame(
   Title = gsub("\\.rds$", "", rds_files),
   Description = paste("Aging omic biomarker predictor coefficients for",
                       gsub("\\.rds$", "", rds_files)),
-  BiocVersion = "3.18",
+  BiocVersion = "3.22",
   Genome = NA_character_,
   SourceUrl = "https://zenodo.org/placeholder",
   Coordinate_1_based = TRUE,
@@ -145,7 +145,6 @@ final_metadata_fixed <- final_metadata[, official_columns]
 # ------------------------------------------------------------------------------
 # 6. Export to Package Directory
 # ------------------------------------------------------------------------------
-
 
 write.csv(final_metadata_fixed, "inst/extdata/metadata.csv", row.names = FALSE)
 
