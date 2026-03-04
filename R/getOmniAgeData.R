@@ -6,6 +6,7 @@
 #' Default is FALSE.
 #' @param localDir Character. For internal developer use only.
 #' The path to the local data folder if localTest is TRUE.
+#' @param verbose Logical. Whether to print progress messages. Default is TRUE.
 #' @return The loaded R object.
 #' @importFrom AnnotationHub query
 #' @importFrom ExperimentHub ExperimentHub
@@ -33,10 +34,11 @@
 getOmniAgeData <- function(
     title,
     localTest = FALSE,
-    localDir = "local_test_data") {
+    localDir = "local_test_data",
+    verbose = TRUE) {
     # 1. Handling the local development and testing mode
     if (localTest) {
-        return(.loadLocalData(title, localDir))
+        return(.loadLocalData(title, localDir, verbose))
     }
 
     # 2. The official cloud download mode
@@ -47,6 +49,7 @@ getOmniAgeData <- function(
         stop(sprintf("Resource '%s' not found in OmniAgeRData.", title))
     }
 
+    if (verbose) message("Retrieving resource: ", hubTitle)
     dataObjOrPath <- res[[1]]
     hubTitle <- res$title
 
@@ -66,8 +69,8 @@ getOmniAgeData <- function(
 ## @param localDir Character(1). Path to search.
 ## @return Loaded object or throws an error.
 
-.loadLocalData <- function(title, localDir) {
-    message("--- Running in Local Development Mode ---")
+.loadLocalData <- function(title, localDir, verbose) {
+    if (verbose) message("--- Running in Local Development Mode ---")
     possibleFiles <- list.files(localDir, pattern = title, full.names = TRUE)
 
     if (length(possibleFiles) == 0) {
@@ -78,7 +81,7 @@ getOmniAgeData <- function(
     }
 
     localFile <- possibleFiles[1]
-    message("Loading local file: ", localFile)
+    if (verbose) message("Loading local file: ", localFile)
 
     if (grepl("\\.qs2?$", localFile)) {
         if (!requireNamespace("qs2", quietly = TRUE)) {

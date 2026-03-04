@@ -4,7 +4,12 @@
 \alias{getOmniAgeData}
 \title{Get OmniAgeR Data Resources}
 \usage{
-getOmniAgeData(title, localTest = FALSE, localDir = "local_test_data")
+getOmniAgeData(
+  title,
+  localTest = FALSE,
+  localDir = "local_test_data",
+  verbose = TRUE
+)
 }
 \arguments{
 \item{title}{The title or ResourceName of the dataset.}
@@ -15,6 +20,8 @@ Default is FALSE.}
 
 \item{localDir}{Character. For internal developer use only.
 The path to the local data folder if localTest is TRUE.}
+
+\item{verbose}{Logical. Whether to print progress messages. Default is TRUE.}
 }
 \value{
 The loaded R object.
