@@ -47,12 +47,12 @@ getOmniAgeData <- function(
         stop(sprintf("Resource '%s' not found in OmniAgeRData.", title))
     }
 
-    if (verbose) {
-        message("Retrieving resource: ", hubTitle)
-    }
     dataObjOrPath <- res[[1]]
     hubTitle <- res$title
 
+    if (verbose) {
+        message("Retrieving resource: ", hubTitle)
+    }
     if (is.character(dataObjOrPath) &&
         grepl("\\.qs2?$", hubTitle)) {
         if (!requireNamespace("qs2", quietly = TRUE)) {
