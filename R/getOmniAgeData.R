@@ -21,8 +21,9 @@
 #' # 2. Run a local test (this is "runnable" and satisfies BiocCheck)
 #' try({
 #'     res <- getOmniAgeData("test_data",
-#'                           localTest = TRUE,
-#'                           localDir = local_dir)
+#'         localTest = TRUE,
+#'         localDir = local_dir
+#'     )
 #'     print(res)
 #' })
 #'
@@ -32,10 +33,7 @@
 #' }
 #'
 getOmniAgeData <- function(
-    title,
-    localTest = FALSE,
-    localDir = "local_test_data",
-    verbose = TRUE) {
+    title, localTest = FALSE, localDir = "local_test_data", verbose = TRUE) {
     # 1. Handling the local development and testing mode
     if (localTest) {
         return(.loadLocalData(title, localDir, verbose))
@@ -49,11 +47,14 @@ getOmniAgeData <- function(
         stop(sprintf("Resource '%s' not found in OmniAgeRData.", title))
     }
 
-    if (verbose) message("Retrieving resource: ", hubTitle)
+    if (verbose) {
+        message("Retrieving resource: ", hubTitle)
+    }
     dataObjOrPath <- res[[1]]
     hubTitle <- res$title
 
-    if (is.character(dataObjOrPath) && grepl("\\.qs2?$", hubTitle)) {
+    if (is.character(dataObjOrPath) &&
+        grepl("\\.qs2?$", hubTitle)) {
         if (!requireNamespace("qs2", quietly = TRUE)) {
             stop("Package 'qs2' is required to read this resource.")
         }
@@ -70,20 +71,33 @@ getOmniAgeData <- function(
 ## @return Loaded object or throws an error.
 
 .loadLocalData <- function(title, localDir, verbose) {
-    if (verbose) message("--- Running in Local Development Mode ---")
-    possibleFiles <- list.files(localDir, pattern = title, full.names = TRUE)
+    if (verbose) {
+        message("--- Running in Local Development Mode ---")
+    }
+
+    exactPattern <- paste0("^", title, "\\.(rds|qs2?)$")
+    possibleFiles <- list.files(
+        localDir,
+        pattern = exactPattern,
+        ignore.case = TRUE,
+        full.names = TRUE
+    )
 
     if (length(possibleFiles) == 0) {
         stop(sprintf(
-            "Local file matching '%s' not found in %s",
+            "Local file exactly matching '%s' (.rds or .qs2) not found in %s",
             title,
-            localDir))
+            localDir
+            )
+        )
     }
 
     localFile <- possibleFiles[1]
-    if (verbose) message("Loading local file: ", localFile)
+    if (verbose) {
+        message("Loading local file: ", localFile)
+    }
 
-    if (grepl("\\.qs2?$", localFile)) {
+    if (grepl("\\.qs2?$", localFile, ignore.case = TRUE)) {
         if (!requireNamespace("qs2", quietly = TRUE)) {
             stop("Package 'qs2' required.")
         }
