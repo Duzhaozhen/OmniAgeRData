@@ -39,9 +39,9 @@ metadata <- data.frame(
   Title = gsub("\\.rds$", "", rds_files),
   Description = paste("Aging omic biomarker predictor coefficients for",
                       gsub("\\.rds$", "", rds_files)),
-  BiocVersion = "3.22",
+  BiocVersion = "3.23",
   Genome = NA_character_,
-  SourceUrl = "https://zenodo.org/placeholder",
+  SourceUrl = NA_character_,
   Coordinate_1_based = TRUE,
   Maintainer = "Zhaozhen Du <duzhaozhen2022@sinh.ac.cn>",
   RDataClass = as.character(detected_classes),
@@ -61,7 +61,7 @@ qs2_metadata <- data.frame(
     "PC Clocks data (qs2 format). Use qs2::qd_read() to load.",
     "SystemsAge Clock data (qs2 format). Use qs2::qd_read() to load."
   ),
-  BiocVersion = "3.18",
+  BiocVersion = "3.23",
   Genome = NA_character_,
   SourceUrl = NA_character_,
   Coordinate_1_based = TRUE,
@@ -126,9 +126,8 @@ for (i in seq_len(nrow(temp_providers))) {
 zenodo_id <- "18832408"
 final_metadata <- final_metadata %>%
   mutate(
-    RDataPath = ResourceName,
-    Location_Prefix = paste0("https://zenodo.org/records/", zenodo_id,
-                             "/files/")
+    Location_Prefix = "https://zenodo.org/",
+    RDataPath = paste0("api/records/", zenodo_id, "/files/", ResourceName, "/content"),
   )
 
 official_columns <- c(
@@ -145,6 +144,6 @@ final_metadata_fixed <- final_metadata[, official_columns]
 # ------------------------------------------------------------------------------
 # 6. Export to Package Directory
 # ------------------------------------------------------------------------------
-
+final_metadata_fixed$SourceUrl <- gsub("\\)$", "", final_metadata_fixed$SourceUrl)
 write.csv(final_metadata_fixed, "inst/extdata/metadata.csv", row.names = FALSE)
 

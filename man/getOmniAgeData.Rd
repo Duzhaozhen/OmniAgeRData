@@ -38,8 +38,9 @@ saveRDS(matrix(1:10), file.path(local_dir, "test_data.rds"))
 # 2. Run a local test (this is "runnable" and satisfies BiocCheck)
 try({
     res <- getOmniAgeData("test_data",
-                          localTest = TRUE,
-                          localDir = local_dir)
+        localTest = TRUE,
+        localDir = local_dir
+    )
     print(res)
 })
 
